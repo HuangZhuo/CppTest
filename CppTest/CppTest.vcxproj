@@ -78,7 +78,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithms\排序.cpp" />
+    <ClCompile Include="DesignPatterns\Observer.cpp" />
+    <ClCompile Include="Grammer\std__bind.cpp" />
+    <ClCompile Include="Grammer\可变参数模板.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DesignPatterns\Observer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

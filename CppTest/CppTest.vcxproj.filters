@@ -13,10 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\Grammer">
+      <UniqueIdentifier>{dc4a2656-8e88-4081-8294-6000152487a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Pattrns">
+      <UniqueIdentifier>{03672a2f-e695-4fee-bf85-c630c90f8d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Algorithms">
+      <UniqueIdentifier>{50159460-6519-4a22-8229-198c5ffe31c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DesignPatterns\Observer.cpp">
+      <Filter>源文件\Pattrns</Filter>
+    </ClCompile>
+    <ClCompile Include="Grammer\可变参数模板.cpp">
+      <Filter>源文件\Grammer</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\排序.cpp">
+      <Filter>源文件\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Grammer\std__bind.cpp">
+      <Filter>源文件\Grammer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DesignPatterns\Observer.h">
+      <Filter>源文件\Pattrns</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
