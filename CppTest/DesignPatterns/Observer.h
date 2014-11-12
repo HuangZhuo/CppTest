@@ -11,12 +11,12 @@ class Observer;
 class Subject
 {
 public:
-	virtual ~Subject();
+	virtual ~Subject(){}
 	virtual void Attach(Observer* o);
 	virtual void Detach(Observer* o);
 	virtual void Notify();
 protected:
-	Subject();
+	Subject(){}
 private:
 	std::list<Observer*> _observers;
 };
@@ -25,14 +25,11 @@ private:
 class Observer
 {
 public:
-	virtual ~Observer();
+	virtual ~Observer(){}
 	virtual void Update(Subject* theChangeSubject) = 0;
 protected:
-	Observer();
+	Observer(){}
 };
-
-inline Subject::Subject(){}
-inline Subject::~Subject(){}
 
 inline void Subject::Attach(Observer* o)
 {
@@ -46,13 +43,10 @@ inline void Subject::Notify()
 {
 	for each (auto o in _observers)
 	{
-		//this是【目标】，对于【观察者】o来说，参数用来区分不同的目标。
+		//this是【目标】，对于【观察者】o来说，参数this用来区分不同的目标。
 		o->Update(this);
 	}
 }
-
-inline Observer::Observer(){}
-inline Observer::~Observer(){}
 
 //***************************************
 //下面是观察者模式的应用
@@ -60,9 +54,8 @@ inline Observer::~Observer(){}
 class ClockTimer : public Subject
 {
 public:
-	ClockTimer();
-	~ClockTimer();
-
+	ClockTimer(){}
+	~ClockTimer(){}
 
 	//【观察者】获取【目标】状态的接口。这里以小时为例。
 	virtual int GetHour();
@@ -73,9 +66,6 @@ private:
 	//保存内部状态，即时间。
 	time_t _time;
 };
-
-inline ClockTimer::ClockTimer(){}
-inline ClockTimer::~ClockTimer(){}
 
 inline void ClockTimer::Tick()
 {
@@ -138,9 +128,11 @@ inline void DigitalClock::Update(Subject* theChangeSubject)
 {
 	if (theChangeSubject == _subject)
 	{
+		//Draw方法是widget的一个接口。Draw方法内部需要调用【目标】子类提供的获取状态的接口。
+		//所以这里判断发出Notify的具体【目标】是有必要的！
+		//这意味着一个【观察者】可以观察多个【目标】，同时只保留一个Update方法。
 		Draw();
 	}
 }
-
 
 #endif
