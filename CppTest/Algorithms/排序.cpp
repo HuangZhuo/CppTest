@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 //快速排序 C.A.R.Hoare 1962
 void qsort(int v[], int length);
@@ -44,6 +45,9 @@ void __swap(int v[], int i, int j)
 
 void qsort(int v[], int length)
 {
+	// 参数有效性检测。
+	assert(nullptr != v);
+	// 在我看来这种包装方式还是很有用的：外包装检测参数有效性，保持外部接口不变。同时内部_func()专注算法，并且不影响接口的情况下随时优化。
 	void __qsort(int v[], int left, int right);
 	__qsort(v, 0, length - 1);
 }
