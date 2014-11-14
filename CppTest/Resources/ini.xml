@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+    <!--This is an xml comment-->
+    <resolution>
+        <Width>480</Width>
+        <Height>320</Height>
+    </resolution>
+</plist>
