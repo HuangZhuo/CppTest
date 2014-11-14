@@ -41,6 +41,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Libs;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -80,12 +81,22 @@
   <ItemGroup>
     <ClCompile Include="Algorithms\排序.cpp" />
     <ClCompile Include="DesignPatterns\Observer.cpp" />
+    <ClCompile Include="DesignPatterns\Singleton.cpp" />
     <ClCompile Include="Grammer\std__bind.cpp" />
     <ClCompile Include="Grammer\可变参数模板.cpp" />
+    <ClCompile Include="LibsTest\Test_json.cpp" />
+    <ClCompile Include="LibsTest\Test_sqlite3.cpp" />
+    <ClCompile Include="LibsTest\Test_tinyxml2.cpp" />
+    <ClCompile Include="Libs\sqlite3\sqlite3.c" />
+    <ClCompile Include="Libs\tinyxml2\tinyxml2.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DesignPatterns\Observer.h" />
+    <ClInclude Include="DesignPatterns\Singleton.h" />
+    <ClInclude Include="Libs\sqlite3\sqlite3.h" />
+    <ClInclude Include="Libs\sqlite3\sqlite3ext.h" />
+    <ClInclude Include="Libs\tinyxml2\tinyxml2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

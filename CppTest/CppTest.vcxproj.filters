@@ -5,10 +5,6 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -21,6 +17,18 @@
     </Filter>
     <Filter Include="源文件\Algorithms">
       <UniqueIdentifier>{50159460-6519-4a22-8229-198c5ffe31c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{64b61fc1-060b-4b53-bdb8-5f4b390a8180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\sqlite3">
+      <UniqueIdentifier>{ae5caccd-d139-4a98-85a2-329d706a96f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LibsTest">
+      <UniqueIdentifier>{5cedfa18-06fb-4d8a-ad59-57eaf5ebc3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\tinyxml2">
+      <UniqueIdentifier>{faa529bd-f5cf-4b29-8af4-32d4063a855d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,10 +47,40 @@
     <ClCompile Include="Grammer\std__bind.cpp">
       <Filter>源文件\Grammer</Filter>
     </ClCompile>
+    <ClCompile Include="DesignPatterns\Singleton.cpp">
+      <Filter>源文件\Pattrns</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\sqlite3\sqlite3.c">
+      <Filter>Libs\sqlite3</Filter>
+    </ClCompile>
+    <ClCompile Include="LibsTest\Test_sqlite3.cpp">
+      <Filter>源文件\LibsTest</Filter>
+    </ClCompile>
+    <ClCompile Include="LibsTest\Test_json.cpp">
+      <Filter>源文件\LibsTest</Filter>
+    </ClCompile>
+    <ClCompile Include="LibsTest\Test_tinyxml2.cpp">
+      <Filter>源文件\LibsTest</Filter>
+    </ClCompile>
+    <ClCompile Include="Libs\tinyxml2\tinyxml2.cpp">
+      <Filter>Libs\tinyxml2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DesignPatterns\Observer.h">
       <Filter>源文件\Pattrns</Filter>
+    </ClInclude>
+    <ClInclude Include="DesignPatterns\Singleton.h">
+      <Filter>源文件\Pattrns</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\sqlite3\sqlite3.h">
+      <Filter>Libs\sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\sqlite3\sqlite3ext.h">
+      <Filter>Libs\sqlite3</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\tinyxml2\tinyxml2.h">
+      <Filter>Libs\tinyxml2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
