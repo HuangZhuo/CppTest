@@ -1,5 +1,9 @@
 #include <iostream>
+#include <iterator> //std::ostream_iterator
+#include <algorithm> //std::swap,generate
+#include <vector> //std::begin,end
 #include <cassert>
+#include <ctime> //std::time
 
 //快速排序 C.A.R.Hoare 1962
 void qsort(int v[], int length);
@@ -10,14 +14,16 @@ void qsort(int v[], int length);
 #ifdef TEST_SORT
 void main()
 {
-	int A[] = { 7, 5, 3, 8, 2, 6, 4, };
+	std::srand(unsigned(time(0)));
+
+	int A[10];
 	int len = sizeof(A) / sizeof(A[0]);
+	std::generate(A, A + len, [](){ return std::rand() % 100; });
 	qsort(A, len);
 	//std::cout << A; //这货丫的输出地址....
-	for each (int i in A)
-	{
-		std::cout << i << " ";
-	}
+
+	std::ostream_iterator<int, char> op_iter(std::cout, " ");
+	std::copy(std::begin(A), std::end(A), op_iter);
 }
 #endif
 
@@ -40,7 +46,8 @@ void __qsort(int v[], int left, int right)
 
 void __swap(int v[], int i, int j)
 {
-	int t;	t = v[i]; v[i] = v[j]; v[j] = t;
+	//int t;	t = v[i]; v[i] = v[j]; v[j] = t;
+	std::swap(v[i], v[j]);
 }
 
 void qsort(int v[], int length)
@@ -48,6 +55,7 @@ void qsort(int v[], int length)
 	// 参数有效性检测。
 	assert(nullptr != v);
 	// 在我看来这种包装方式还是很有用的：外包装检测参数有效性，保持外部接口不变。同时内部_func()专注算法，并且不影响接口的情况下随时优化。
+	// 比如说我写的__qsort出现BUG，可以立马在这里换成std::sort。
 	void __qsort(int v[], int left, int right);
 	__qsort(v, 0, length - 1);
 }
