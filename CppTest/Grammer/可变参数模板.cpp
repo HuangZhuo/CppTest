@@ -19,8 +19,12 @@ void zprinto(std::ostream& os, const T& t, const Args&... args)//函数参数包
 	zprinto(os, args...);//函数参数包展开
 }
 
-//int main()
-//{
-//	zprinto(cout, 1, 2, 3.14, "hello");
-//	return 0;
-//}
+//#define TEST_ARGST
+
+#ifdef TEST_ARGST
+int main()
+{
+	zprinto(cout, 1, 2, 3.14, "hello");
+	return 0;
+}
+#endif
