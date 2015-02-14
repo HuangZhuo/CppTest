@@ -84,6 +84,10 @@
     <ClCompile Include="DesignPatterns\Singleton.cpp" />
     <ClCompile Include="Grammer\std__bind.cpp" />
     <ClCompile Include="Grammer\可变参数模板.cpp" />
+    <ClCompile Include="Grammer\字符串.cpp" />
+    <ClCompile Include="Grammer\文件基础.cpp" />
+    <ClCompile Include="Grammer\模板函数.cpp" />
+    <ClCompile Include="Grammer\算法和迭代器库.cpp" />
     <ClCompile Include="LibsTest\Test_json.cpp" />
     <ClCompile Include="LibsTest\Test_sqlite3.cpp" />
     <ClCompile Include="LibsTest\Test_tinyxml2.cpp" />
@@ -94,6 +98,20 @@
   <ItemGroup>
     <ClInclude Include="DesignPatterns\Observer.h" />
     <ClInclude Include="DesignPatterns\Singleton.h" />
+    <ClInclude Include="Libs\rapidjson\allocators.h" />
+    <ClInclude Include="Libs\rapidjson\document.h" />
+    <ClInclude Include="Libs\rapidjson\encodedstream.h" />
+    <ClInclude Include="Libs\rapidjson\encodings.h" />
+    <ClInclude Include="Libs\rapidjson\filereadstream.h" />
+    <ClInclude Include="Libs\rapidjson\filestream.h" />
+    <ClInclude Include="Libs\rapidjson\filewritestream.h" />
+    <ClInclude Include="Libs\rapidjson\memorybuffer.h" />
+    <ClInclude Include="Libs\rapidjson\memorystream.h" />
+    <ClInclude Include="Libs\rapidjson\prettywriter.h" />
+    <ClInclude Include="Libs\rapidjson\rapidjson.h" />
+    <ClInclude Include="Libs\rapidjson\reader.h" />
+    <ClInclude Include="Libs\rapidjson\stringbuffer.h" />
+    <ClInclude Include="Libs\rapidjson\writer.h" />
     <ClInclude Include="Libs\sqlite3\sqlite3.h" />
     <ClInclude Include="Libs\sqlite3\sqlite3ext.h" />
     <ClInclude Include="Libs\tinyxml2\tinyxml2.h" />

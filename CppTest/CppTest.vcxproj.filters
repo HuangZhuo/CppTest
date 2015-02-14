@@ -30,6 +30,9 @@
     <Filter Include="Libs\tinyxml2">
       <UniqueIdentifier>{faa529bd-f5cf-4b29-8af4-32d4063a855d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Libs\rapidjson">
+      <UniqueIdentifier>{9bceb602-c64c-4877-92ad-f916f86c151a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -65,6 +68,18 @@
     <ClCompile Include="Libs\tinyxml2\tinyxml2.cpp">
       <Filter>Libs\tinyxml2</Filter>
     </ClCompile>
+    <ClCompile Include="Grammer\算法和迭代器库.cpp">
+      <Filter>源文件\Grammer</Filter>
+    </ClCompile>
+    <ClCompile Include="Grammer\字符串.cpp">
+      <Filter>源文件\Grammer</Filter>
+    </ClCompile>
+    <ClCompile Include="Grammer\模板函数.cpp">
+      <Filter>源文件\Grammer</Filter>
+    </ClCompile>
+    <ClCompile Include="Grammer\文件基础.cpp">
+      <Filter>源文件\Grammer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DesignPatterns\Observer.h">
@@ -81,6 +96,48 @@
     </ClInclude>
     <ClInclude Include="Libs\tinyxml2\tinyxml2.h">
       <Filter>Libs\tinyxml2</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\allocators.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\document.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\encodedstream.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\encodings.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\filereadstream.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\filestream.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\filewritestream.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\memorybuffer.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\memorystream.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\prettywriter.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\rapidjson.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\reader.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\stringbuffer.h">
+      <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\rapidjson\writer.h">
+      <Filter>Libs\rapidjson</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
