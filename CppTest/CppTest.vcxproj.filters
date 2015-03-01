@@ -44,9 +44,6 @@
     <ClCompile Include="Grammer\可变参数模板.cpp">
       <Filter>源文件\Grammer</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms\排序.cpp">
-      <Filter>源文件\Algorithms</Filter>
-    </ClCompile>
     <ClCompile Include="Grammer\std__bind.cpp">
       <Filter>源文件\Grammer</Filter>
     </ClCompile>
@@ -79,6 +76,15 @@
     </ClCompile>
     <ClCompile Include="Grammer\文件基础.cpp">
       <Filter>源文件\Grammer</Filter>
+    </ClCompile>
+    <ClCompile Include="TestInterface.h">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="prime_test.cpp">
+      <Filter>源文件\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\sort.cpp">
+      <Filter>源文件\Algorithms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +144,12 @@
     </ClInclude>
     <ClInclude Include="Libs\rapidjson\writer.h">
       <Filter>Libs\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm_common.h">
+      <Filter>源文件\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="prime_test.h">
+      <Filter>源文件\Algorithms</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
