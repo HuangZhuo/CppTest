@@ -80,10 +80,10 @@
     <ClCompile Include="TestInterface.h">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="prime_test.cpp">
+    <ClCompile Include="Algorithms\sort.cpp">
       <Filter>源文件\Algorithms</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms\sort.cpp">
+    <ClCompile Include="Algorithms\prime_test.cpp">
       <Filter>源文件\Algorithms</Filter>
     </ClCompile>
   </ItemGroup>
@@ -145,10 +145,10 @@
     <ClInclude Include="Libs\rapidjson\writer.h">
       <Filter>Libs\rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="algorithm_common.h">
+    <ClInclude Include="Algorithms\algorithm_common.h">
       <Filter>源文件\Algorithms</Filter>
     </ClInclude>
-    <ClInclude Include="prime_test.h">
+    <ClInclude Include="Algorithms\prime_test.h">
       <Filter>源文件\Algorithms</Filter>
     </ClInclude>
   </ItemGroup>

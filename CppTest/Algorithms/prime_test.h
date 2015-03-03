@@ -1,4 +1,4 @@
-#include "TestInterface.h"
+#include "../TestInterface.h"
 
 // 如果不是public继承，将不允许基类指针指向子类对象。
 class PrimeNumberTest :public TestInterface

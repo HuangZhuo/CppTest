@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Algorithms\prime_test.cpp" />
     <ClCompile Include="Algorithms\sort.cpp" />
     <ClCompile Include="DesignPatterns\Observer.cpp" />
     <ClCompile Include="DesignPatterns\Singleton.cpp" />
@@ -95,10 +96,10 @@
     <ClCompile Include="Libs\tinyxml2\tinyxml2.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="TestInterface.h" />
-    <ClCompile Include="prime_test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="algorithm_common.h" />
+    <ClInclude Include="Algorithms\algorithm_common.h" />
+    <ClInclude Include="Algorithms\prime_test.h" />
     <ClInclude Include="DesignPatterns\Observer.h" />
     <ClInclude Include="DesignPatterns\Singleton.h" />
     <ClInclude Include="Libs\rapidjson\allocators.h" />
@@ -118,7 +119,6 @@
     <ClInclude Include="Libs\sqlite3\sqlite3.h" />
     <ClInclude Include="Libs\sqlite3\sqlite3ext.h" />
     <ClInclude Include="Libs\tinyxml2\tinyxml2.h" />
-    <ClInclude Include="prime_test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
