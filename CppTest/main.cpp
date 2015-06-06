@@ -5,12 +5,13 @@
  * 通过一个【是否注释】的TEST_×××宏作为【开关】决定哪一个main函数运行。
  */
 #include "./Algorithms/algorithm_common.h"
+#include "./Grammer/grammar_common.h"
 
 #define TEST_
 #ifdef TEST_
 void main()
 {
-	TestInterface* p = new PrimeNumberTest();
+	TestInterface* p = new TemplateTest();
 	p->Invoke();
 	getchar();
 	//std::string name;

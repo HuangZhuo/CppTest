@@ -1,8 +1,2 @@
-//#define TEST_TMPFUNC
+#include "template_test.h"
 
-#ifdef TEST_TMPFUNC
-void main()
-{
-
-}
-#endif

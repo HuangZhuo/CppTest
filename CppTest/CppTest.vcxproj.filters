@@ -151,5 +151,11 @@
     <ClInclude Include="Algorithms\prime_test.h">
       <Filter>源文件\Algorithms</Filter>
     </ClInclude>
+    <ClInclude Include="Grammer\template_test.h">
+      <Filter>源文件\Grammer</Filter>
+    </ClInclude>
+    <ClInclude Include="Grammer\grammar_common.h">
+      <Filter>源文件\Grammer</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

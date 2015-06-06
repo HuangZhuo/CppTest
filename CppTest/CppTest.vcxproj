@@ -102,6 +102,8 @@
     <ClInclude Include="Algorithms\prime_test.h" />
     <ClInclude Include="DesignPatterns\Observer.h" />
     <ClInclude Include="DesignPatterns\Singleton.h" />
+    <ClInclude Include="Grammer\grammar_common.h" />
+    <ClInclude Include="Grammer\template_test.h" />
     <ClInclude Include="Libs\rapidjson\allocators.h" />
     <ClInclude Include="Libs\rapidjson\document.h" />
     <ClInclude Include="Libs\rapidjson\encodedstream.h" />
