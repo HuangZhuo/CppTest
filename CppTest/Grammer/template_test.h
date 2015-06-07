@@ -91,6 +91,12 @@ public:
 	void Pop();
 	bool Empty() const;
 
+	// 【成员模版】
+	template<typename _It>
+	MyQueue(_It beg, _It end) :mHead(nullptr), mTail(nullptr){ _Copy(beg, end); }
+	template<typename _It>
+	void Assign(_It, _It);
+
 private:
 	// STL中采用“adapter”模式，这里直接用链表写。
 	MyQueueNode<T>* mHead; //Queue 类中的 QueueItem 成员是指针。类模板的指针定义不会对类进行实例化，只有用到这样的指针时才会对类进行实例化。
@@ -98,6 +104,9 @@ private:
 
 	void _Destroy();
 	void _Copy(const MyQueue& q);
+
+	template<typename _It>
+	void _Copy(_It beg, _It end);
 
 	friend std::ostream& operator<< <T>(ostream& os, const MyQueue<T>& n);
 };
@@ -182,6 +191,24 @@ void MyQueue<T>::Push(const T& a)
 	}
 }
 
+// 在类外部定义【成员模版（函数）】
+template<typename T> template<typename _It> //第一个模板形参表 template<class T> 是类模板的，第二个模板形参表 template<class Iter> 是成员模板的。
+void MyQueue<T>::Assign(_It beg, _It end)
+{
+	_Destroy();
+	_Copy(beg, end);
+}
+
+template<typename T> template<typename _It>
+void MyQueue<T>::_Copy(_It beg, _It end)
+{
+	while (beg != end)
+	{
+		Push(*beg);
+		++beg;
+	}
+}
+#pragma endregion
 
 class TemplateTest :public TestInterface
 {
@@ -192,7 +219,6 @@ protected:
 
 private:
 };
-#pragma endregion
 
 inline void TemplateTest::Invoke()
 {
@@ -219,7 +245,10 @@ inline void TemplateTest::Invoke()
 	que.Push(1); //此时实例化 push 成员函数
 	que.Push(2);
 
-	cout << que; //为没有定义输出操作符的类创建 Queue 对象是合法的，但输出保存这种类型的 Queue 对象会发生编译时（或链接时）错误。
+	cout << que << endl; //为没有定义输出操作符的类创建 Queue 对象是合法的，但输出保存这种类型的 Queue 对象会发生编译时（或链接时）错误。
+
+	que.Assign(v.begin(), v.end());
+	cout << que << endl;
 }
 
 // 编写模板代码时，对实参类型的要求尽可能少是很有益的。
