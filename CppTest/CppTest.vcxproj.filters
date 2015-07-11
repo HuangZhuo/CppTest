@@ -33,6 +33,9 @@
     <Filter Include="Libs\rapidjson">
       <UniqueIdentifier>{9bceb602-c64c-4877-92ad-f916f86c151a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\STL">
+      <UniqueIdentifier>{9dbf8716-7559-417e-9ddd-171c6696c1e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -85,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="Algorithms\prime_test.cpp">
       <Filter>源文件\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="STL\STL.cpp">
+      <Filter>源文件\STL</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +162,9 @@
     </ClInclude>
     <ClInclude Include="Grammer\grammar_common.h">
       <Filter>源文件\Grammer</Filter>
+    </ClInclude>
+    <ClInclude Include="STL\STL.h">
+      <Filter>源文件\STL</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
